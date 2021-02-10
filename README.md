@@ -156,20 +156,20 @@
 ## Objects
 
   <a name="objects--no-new"></a><a name="3.1"></a>
-  - [3.1](#objects--no-new) Use the literal syntax for object creation. eslint: [`no-new-object`](https://eslint.org/docs/rules/no-new-object.html)
+  - [3.1](#objects--no-new) ऑब्जेक्ट निर्माण के लिए शाब्दिक सिंटैक्स का उपयोग करें। eslint: [`no-new-object`](https://eslint.org/docs/rules/no-new-object.html)
 
     ```javascript
-    // bad
+    // बुरा
     const item = new Object();
 
-    // good
+    // ठीक
     const item = {};
     ```
 
   <a name="es6-computed-properties"></a><a name="3.4"></a>
-  - [3.2](#es6-computed-properties) Use computed property names when creating objects with dynamic property names.
+  - [3.2](#es6-computed-properties) गतिशील संपत्ति के नाम के साथ वस्तुओं का निर्माण करते समय कम्प्यूटेड संपत्ति नामों का उपयोग करें।
 
-    > Why? They allow you to define all the properties of an object in one place.
+    > क्यों? वे आपको किसी वस्तु के सभी गुणों को एक स्थान पर परिभाषित करने की अनुमति देते हैं।
 
     ```javascript
 
@@ -177,14 +177,14 @@
       return `a key named ${k}`;
     }
 
-    // bad
+    // बुरा
     const obj = {
       id: 5,
       name: 'San Francisco',
     };
     obj[getKey('enabled')] = true;
 
-    // good
+    // ठीक
     const obj = {
       id: 5,
       name: 'San Francisco',
@@ -193,10 +193,10 @@
     ```
 
   <a name="es6-object-shorthand"></a><a name="3.5"></a>
-  - [3.3](#es6-object-shorthand) Use object method shorthand. eslint: [`object-shorthand`](https://eslint.org/docs/rules/object-shorthand.html)
+  - [3.3](#es6-object-shorthand) ऑब्जेक्ट विधि शॉर्टहैंड का उपयोग करें। eslint: [`object-shorthand`](https://eslint.org/docs/rules/object-shorthand.html)
 
     ```javascript
-    // bad
+    // बुरा
     const atom = {
       value: 1,
 
@@ -205,7 +205,7 @@
       },
     };
 
-    // good
+    // ठीक
     const atom = {
       value: 1,
 
@@ -216,34 +216,34 @@
     ```
 
   <a name="es6-object-concise"></a><a name="3.6"></a>
-  - [3.4](#es6-object-concise) Use property value shorthand. eslint: [`object-shorthand`](https://eslint.org/docs/rules/object-shorthand.html)
+  - [3.4](#es6-object-concise) संपत्ति मूल्य आशुलिपि का उपयोग करें। eslint: [`object-shorthand`](https://eslint.org/docs/rules/object-shorthand.html)
 
-    > Why? It is shorter and descriptive.
+    > क्यों? यह छोटा और वर्णनात्मक है।
 
     ```javascript
     const lukeSkywalker = 'Luke Skywalker';
 
-    // bad
+    // बुरा
     const obj = {
       lukeSkywalker: lukeSkywalker,
     };
 
-    // good
+    // ठीक
     const obj = {
       lukeSkywalker,
     };
     ```
 
   <a name="objects--grouped-shorthand"></a><a name="3.7"></a>
-  - [3.5](#objects--grouped-shorthand) Group your shorthand properties at the beginning of your object declaration.
+  - [3.5](#objects--grouped-shorthand) अपनी वस्तु घोषणा की शुरुआत में अपने आशुलिपि गुणों का समूह बनाएं।
 
-    > Why? It’s easier to tell which properties are using the shorthand.
+    > क्यों? यह बताना आसान है कि कौन से गुण शॉर्टहैंड का उपयोग कर रहे हैं।
 
     ```javascript
     const anakinSkywalker = 'Anakin Skywalker';
     const lukeSkywalker = 'Luke Skywalker';
 
-    // bad
+    // बुरा
     const obj = {
       episodeOne: 1,
       twoJediWalkIntoACantina: 2,
@@ -253,7 +253,7 @@
       anakinSkywalker,
     };
 
-    // good
+    // ठीक
     const obj = {
       lukeSkywalker,
       anakinSkywalker,
@@ -265,19 +265,19 @@
     ```
 
   <a name="objects--quoted-props"></a><a name="3.8"></a>
-  - [3.6](#objects--quoted-props) Only quote properties that are invalid identifiers. eslint: [`quote-props`](https://eslint.org/docs/rules/quote-props.html)
+  - [3.6](#objects--quoted-props) केवल उन गुणों को उद्धृत करें जो अमान्य पहचानकर्ता हैं। eslint: [`quote-props`](https://eslint.org/docs/rules/quote-props.html)
 
-    > Why? In general we consider it subjectively easier to read. It improves syntax highlighting, and is also more easily optimized by many JS engines.
+    > क्यों? सामान्य तौर पर, हम इसे पढ़ना आसान विषय के रूप में मानते हैं। यह सिंटैक्स हाइलाइटिंग में सुधार करता है और कई जेएस इंजनों द्वारा आसानी से अनुकूलित किया जाता है।
 
     ```javascript
-    // bad
+    // बुरा
     const bad = {
       'foo': 3,
       'bar': 4,
       'data-blah': 5,
     };
 
-    // good
+    // ठीक
     const good = {
       foo: 3,
       bar: 4,
@@ -286,39 +286,39 @@
     ```
 
   <a name="objects--prototype-builtins"></a>
-  - [3.7](#objects--prototype-builtins) Do not call `Object.prototype` methods directly, such as `hasOwnProperty`, `propertyIsEnumerable`, and `isPrototypeOf`. eslint: [`no-prototype-builtins`](https://eslint.org/docs/rules/no-prototype-builtins)
+  - [3.7](#objects--prototype-builtins) सीधे `Object.prototype` विधियों को कॉल न करें, जैसे कि 'hasOwnProperty`, `propertyIsEnumerable`, और `isPrototypeOf`। eslint: [`no-prototype-builtins`](https://eslint.org/docs/rules/no-prototype-builtins)
 
-    > Why? These methods may be shadowed by properties on the object in question - consider `{ hasOwnProperty: false }` - or, the object may be a null object (`Object.create(null)`).
+    > क्यों? इन विधियों को विचाराधीन वस्तु पर गुणों द्वारा छायांकित किया जा सकता है - विचार करें `{ hasOwnProperty: false }` - या, ऑब्जेक्ट एक शून्य ऑब्जेक्ट हो सकता है (`Object.create(null)`).
 
     ```javascript
-    // bad
+    // बुरा
     console.log(object.hasOwnProperty(key));
 
-    // good
+    // ठीक
     console.log(Object.prototype.hasOwnProperty.call(object, key));
 
-    // best
+    // श्रेष्ठ
     const has = Object.prototype.hasOwnProperty; // cache the lookup once, in module scope.
     console.log(has.call(object, key));
-    /* or */
+    /* अथवा */
     import has from 'has'; // https://www.npmjs.com/package/has
     console.log(has(object, key));
     ```
 
   <a name="objects--rest-spread"></a>
-  - [3.8](#objects--rest-spread) Prefer the object spread operator over [`Object.assign`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/assign) to shallow-copy objects. Use the object rest operator to get a new object with certain properties omitted. eslint: [`prefer-object-spread`](https://eslint.org/docs/rules/prefer-object-spread)
+  - [3.8](#objects--rest-spread) उथली-कॉपी वस्तुओं के लिए ऑब्जेक्ट [`Object.assign`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/assign) पर फैले ऑब्जेक्ट को प्राथमिकता दें। छोड़ी गई कुछ संपत्तियों के साथ एक नई वस्तु प्राप्त करने के लिए "ऑब्जेक्ट रेस्ट" ऑपरेटर का उपयोग करें। eslint: [`prefer-object-spread`](https://eslint.org/docs/rules/prefer-object-spread)
 
     ```javascript
-    // very bad
+    // बहुत बुरा
     const original = { a: 1, b: 2 };
-    const copy = Object.assign(original, { c: 3 }); // this mutates `original` ಠ_ಠ
-    delete copy.a; // so does this
+    const copy = Object.assign(original, { c: 3 }); // यह `original` को बदल देता है ಠ_ಠ
+    delete copy.a; // ये भी
 
-    // bad
+    // बुरा
     const original = { a: 1, b: 2 };
     const copy = Object.assign({}, original, { c: 3 }); // copy => { a: 1, b: 2, c: 3 }
 
-    // good
+    // ठीक
     const original = { a: 1, b: 2 };
     const copy = { ...original, c: 3 }; // copy => { a: 1, b: 2, c: 3 }
 
