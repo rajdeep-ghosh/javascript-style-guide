@@ -8,17 +8,17 @@
 [![Downloads](https://img.shields.io/npm/dm/eslint-config-airbnb-base.svg)](https://www.npmjs.com/package/eslint-config-airbnb-base)
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/airbnb/javascript?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-यह गाइड अन्य भाषाओं में भी उपलब्ध है। ले देख [Translation](#translation)
+यह गाइड अन्य भाषाओं में भी उपलब्ध है। ले देख [अनुवाद](#translation)
 
 अन्य स्टाइल गाइड
 
   - [ES5 (Deprecated)](https://github.com/airbnb/javascript/tree/es5-deprecated/es5)
-  - [React](react/)
-  - [CSS-in-JavaScript](css-in-javascript/)
+  - [React](https://github.com/airbnb/javascript/blob/master/react)
+  - [CSS-in-JavaScript](https://github.com/airbnb/javascript/blob/master/css-in-javascript)
   - [CSS & Sass](https://github.com/airbnb/css)
   - [Ruby](https://github.com/airbnb/ruby)
 
-## Table of Contents
+## विषयसूची
 
   1. [Types](#types)
   1. [References](#references)
@@ -63,7 +63,7 @@
 ## Types
 
   <a name="types--primitives"></a><a name="1.1"></a>
-  - [1.1](#types--primitives) **Primitives**: When you access a primitive type you work directly on its value.
+  - [1.1](#types--primitives) **आदिम**: जब आप एक आदिम प्रकार का उपयोग करते हैं तो आप सीधे उसके मूल्य पर काम करते हैं।
 
     - `string`
     - `number`
@@ -82,10 +82,10 @@
     console.log(foo, bar); // => 1, 9
     ```
 
-    - Symbols and BigInts cannot be faithfully polyfilled, so they should not be used when targeting browsers/environments that don’t support them natively.
+    - Symbols और BigInts विश्वासपूर्वक संकलित नहीं किया जा सकता है, इसलिए उन्हें उन ब्राउज़रों / वातावरणों को लक्षित करते समय उपयोग नहीं किया जाना चाहिए जो मूल रूप से उनका समर्थन नहीं करते हैं।
 
   <a name="types--complex"></a><a name="1.2"></a>
-  - [1.2](#types--complex)  **Complex**: When you access a complex type you work on a reference to its value.
+  - [1.2](#types--complex)  **जटिल**: जब आप एक जटिल प्रकार का उपयोग करते हैं तो आप इसके मूल्य के संदर्भ में काम करते हैं।
 
     - `object`
     - `array`
@@ -100,7 +100,7 @@
     console.log(foo[0], bar[0]); // => 9, 9
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#table-of-contents)**
 
 ## References
 
@@ -151,7 +151,7 @@
     console.log(b); // ReferenceError
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#table-of-contents)**
 
 ## Objects
 
@@ -325,7 +325,7 @@
     const { a, ...noA } = copy; // noA => { b: 2, c: 3 }
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#table-of-contents)**
 
 ## Arrays
 
@@ -490,7 +490,7 @@
     ];
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#table-of-contents)**
 
 ## Destructuring
 
@@ -559,7 +559,7 @@
     const { left, top } = processInput(input);
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#table-of-contents)**
 
 ## Strings
 
@@ -642,7 +642,7 @@
     const foo = `my name is '${name}'`;
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#table-of-contents)**
 
 ## Functions
 
@@ -924,7 +924,7 @@
     );
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#table-of-contents)**
 
 ## Arrow Functions
 
@@ -1090,7 +1090,7 @@
     )
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#table-of-contents)**
 
 ## Classes & Constructors
 
@@ -1288,7 +1288,7 @@
     }
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#table-of-contents)**
 
 ## Modules
 
@@ -1460,7 +1460,7 @@
     import baz from './baz';
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#table-of-contents)**
 
 ## Iterators and Generators
 
@@ -1574,7 +1574,7 @@
     };
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#table-of-contents)**
 
 ## Properties
 
@@ -1621,7 +1621,7 @@
     const binary = 2 ** 10;
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#table-of-contents)**
 
 ## Variables
 
@@ -1854,7 +1854,7 @@
     // 'coords' is now the 'data' object without its 'type' property.
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#table-of-contents)**
 
 ## Hoisting
 
@@ -1953,7 +1953,7 @@
 
   - For more information refer to [JavaScript Scoping & Hoisting](http://www.adequatelygood.com/2010/2/JavaScript-Scoping-and-Hoisting/) by [Ben Cherry](http://www.adequatelygood.com/).
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#table-of-contents)**
 
 ## Comparison Operators & Equality
 
@@ -2136,7 +2136,7 @@
     const bar = a + (b / c) * d;
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#table-of-contents)**
 
 ## Blocks
 
@@ -2252,7 +2252,7 @@
     }
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#table-of-contents)**
 
 ## Control Statements
 
@@ -2323,7 +2323,7 @@
     }
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#table-of-contents)**
 
 ## Comments
 
@@ -2464,7 +2464,7 @@
     }
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#table-of-contents)**
 
 ## Whitespace
 
@@ -2928,6 +2928,7 @@
   - [19.20](#whitespace--no-multiple-empty-lines) Avoid multiple empty lines, only allow one newline at the end of files, and avoid a newline at the beginning of files. eslint: [`no-multiple-empty-lines`](https://eslint.org/docs/rules/no-multiple-empty-lines)
 
     <!-- markdownlint-disable MD012 -->
+    
     ```javascript
     // bad - multiple empty lines
     var x = 1;
@@ -2952,7 +2953,7 @@
     ```
     <!-- markdownlint-enable MD012 -->
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#table-of-contents)**
 
 ## Commas
 
@@ -3087,7 +3088,7 @@
     );
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#table-of-contents)**
 
 ## Semicolons
 
@@ -3137,7 +3138,7 @@
 
     [Read more](https://stackoverflow.com/questions/7365172/semicolon-before-self-invoking-function/7365214#7365214).
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#table-of-contents)**
 
 ## Type Casting & Coercion
 
@@ -3228,7 +3229,7 @@
     const hasAge = !!age;
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#table-of-contents)**
 
 ## Naming Conventions
 
@@ -3467,7 +3468,7 @@
     };
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#table-of-contents)**
 
 ## Accessors
 
@@ -3536,7 +3537,7 @@
     }
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#table-of-contents)**
 
 ## Events
 
@@ -3567,7 +3568,7 @@
     });
     ```
 
-  **[⬆ back to top](#table-of-contents)**
+  **[⬆ वापस शीर्ष पर](#table-of-contents)**
 
 ## jQuery
 
@@ -3636,14 +3637,14 @@
     $sidebar.find('ul').hide();
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#table-of-contents)**
 
 ## ECMAScript 5 Compatibility
 
   <a name="es5-compat--kangax"></a><a name="26.1"></a>
   - [27.1](#es5-compat--kangax) Refer to [Kangax](https://twitter.com/kangax/)’s ES5 [compatibility table](https://kangax.github.io/es5-compat-table/).
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#table-of-contents)**
 
 <a name="ecmascript-6-styles"></a>
 ## ECMAScript 6+ (ES 2015+) Styles
@@ -3671,7 +3672,7 @@
 
     > Why? [They are not finalized](https://tc39.github.io/process-document/), and they are subject to change or to be withdrawn entirely. We want to use JavaScript, and proposals are not JavaScript yet.
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#table-of-contents)**
 
 ## Standard Library
 
@@ -3711,7 +3712,7 @@
     Number.isFinite(parseInt('2e3', 10)); // true
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#table-of-contents)**
 
 ## Testing
 
@@ -3733,7 +3734,7 @@
     - 100% test coverage is a good goal to strive for, even if it’s not always practical to reach it.
     - Whenever you fix a bug, _write a regression test_. A bug fixed without a regression test is almost certainly going to break again in the future.
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#table-of-contents)**
 
 ## Performance
 
@@ -3747,7 +3748,7 @@
   - [Are JavaScript functions like `map()`, `reduce()`, and `filter()` optimized for traversing arrays?](https://www.quora.com/JavaScript-programming-language-Are-Javascript-functions-like-map-reduce-and-filter-already-optimized-for-traversing-array/answer/Quildreen-Motta)
   - Loading...
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#table-of-contents)**
 
 ## Resources
 
@@ -3828,7 +3829,7 @@
   - [JavaScript Air](https://javascriptair.com/)
   - [JavaScript Jabber](https://devchat.tv/js-jabber/)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#table-of-contents)**
 
 ## In the Wild
 
@@ -3924,7 +3925,7 @@
   - **Zillow**: [zillow/javascript](https://github.com/zillow/javascript)
   - **ZocDoc**: [ZocDoc/javascript](https://github.com/ZocDoc/javascript)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#table-of-contents)**
 
 ## Translation
 
@@ -3984,7 +3985,7 @@ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#table-of-contents)**
 
 ## Amendments
 
