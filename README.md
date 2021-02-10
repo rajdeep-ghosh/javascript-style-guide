@@ -105,33 +105,33 @@
 ## References
 
   <a name="references--prefer-const"></a><a name="2.1"></a>
-  - [2.1](#references--prefer-const) Use `const` for all of your references; avoid using `var`. eslint: [`prefer-const`](https://eslint.org/docs/rules/prefer-const.html), [`no-const-assign`](https://eslint.org/docs/rules/no-const-assign.html)
+  - [2.1](#references--prefer-const) अपने सभी संदर्भों के लिए `const` का उपयोग करें; `var` का उपयोग करने से बचें। eslint: [`prefer-const`](https://eslint.org/docs/rules/prefer-const.html), [`no-const-assign`](https://eslint.org/docs/rules/no-const-assign.html)
 
-    > Why? This ensures that you can’t reassign your references, which can lead to bugs and difficult to comprehend code.
+    > क्यों? यह सुनिश्चित करता है कि आप अपने संदर्भों को पुन: असाइन नहीं कर सकते हैं, जिससे बग और कोड को समझना मुश्किल हो सकता है।
 
     ```javascript
-    // bad
+    // बुरा
     var a = 1;
     var b = 2;
 
-    // good
+    // ठीक
     const a = 1;
     const b = 2;
     ```
 
   <a name="references--disallow-var"></a><a name="2.2"></a>
-  - [2.2](#references--disallow-var) If you must reassign references, use `let` instead of `var`. eslint: [`no-var`](https://eslint.org/docs/rules/no-var.html)
+  - [2.2](#references--disallow-var) यदि आपको संदर्भों को पुन: सौंपना है, तो `var` के बजाय `let` का उपयोग करें। eslint: [`no-var`](https://eslint.org/docs/rules/no-var.html)
 
-    > Why? `let` is block-scoped rather than function-scoped like `var`.
+    > क्यों? `let` ब्लॉक-स्कॉप्ड है बजाय फ़ंक्शन-स्कॉप्ड की तरह `var`।
 
     ```javascript
-    // bad
+    // बुरा
     var count = 1;
     if (true) {
       count += 1;
     }
 
-    // good, use the let.
+    // ठीक, let का उपयोग करें
     let count = 1;
     if (true) {
       count += 1;
@@ -139,10 +139,10 @@
     ```
 
   <a name="references--block-scope"></a><a name="2.3"></a>
-  - [2.3](#references--block-scope) Note that both `let` and `const` are block-scoped.
+  - [2.3](#references--block-scope) ध्यान दें कि दोनों `let` और `const` ब्लॉक-स्कोप हैं।
 
     ```javascript
-    // const and let only exist in the blocks they are defined in.
+    // "const" और "let" केवल उन ब्लॉकों में मौजूद हैं जो वे परिभाषित हैं।
     {
       let a = 1;
       const b = 1;
