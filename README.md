@@ -100,7 +100,7 @@
     console.log(foo[0], bar[0]); // => 9, 9
     ```
 
-**[⬆ वापस शीर्ष पर](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#विषयसूची)**
 
 ## References
 
@@ -151,7 +151,7 @@
     console.log(b); // ReferenceError
     ```
 
-**[⬆ वापस शीर्ष पर](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#विषयसूची)**
 
 ## Objects
 
@@ -325,7 +325,7 @@
     const { a, ...noA } = copy; // noA => { b: 2, c: 3 }
     ```
 
-**[⬆ वापस शीर्ष पर](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#विषयसूची)**
 
 ## Arrays
 
@@ -490,7 +490,7 @@
     ];
     ```
 
-**[⬆ वापस शीर्ष पर](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#विषयसूची)**
 
 ## Destructuring
 
@@ -559,7 +559,7 @@
     const { left, top } = processInput(input);
     ```
 
-**[⬆ वापस शीर्ष पर](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#विषयसूची)**
 
 ## Strings
 
@@ -642,7 +642,7 @@
     const foo = `my name is '${name}'`;
     ```
 
-**[⬆ वापस शीर्ष पर](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#विषयसूची)**
 
 ## Functions
 
@@ -924,7 +924,7 @@
     );
     ```
 
-**[⬆ वापस शीर्ष पर](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#विषयसूची)**
 
 ## Arrow Functions
 
@@ -1090,7 +1090,7 @@
     )
     ```
 
-**[⬆ वापस शीर्ष पर](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#विषयसूची)**
 
 ## Classes & Constructors
 
@@ -1288,7 +1288,7 @@
     }
     ```
 
-**[⬆ वापस शीर्ष पर](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#विषयसूची)**
 
 ## Modules
 
@@ -1460,7 +1460,7 @@
     import baz from './baz';
     ```
 
-**[⬆ वापस शीर्ष पर](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#विषयसूची)**
 
 ## Iterators and Generators
 
@@ -1574,7 +1574,7 @@
     };
     ```
 
-**[⬆ वापस शीर्ष पर](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#विषयसूची)**
 
 ## Properties
 
@@ -1621,7 +1621,7 @@
     const binary = 2 ** 10;
     ```
 
-**[⬆ वापस शीर्ष पर](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#विषयसूची)**
 
 ## Variables
 
@@ -1854,7 +1854,7 @@
     // 'coords' is now the 'data' object without its 'type' property.
     ```
 
-**[⬆ वापस शीर्ष पर](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#विषयसूची)**
 
 ## Hoisting
 
@@ -1953,7 +1953,7 @@
 
   - For more information refer to [JavaScript Scoping & Hoisting](http://www.adequatelygood.com/2010/2/JavaScript-Scoping-and-Hoisting/) by [Ben Cherry](http://www.adequatelygood.com/).
 
-**[⬆ वापस शीर्ष पर](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#विषयसूची)**
 
 ## Comparison Operators & Equality
 
@@ -2136,7 +2136,7 @@
     const bar = a + (b / c) * d;
     ```
 
-**[⬆ वापस शीर्ष पर](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#विषयसूची)**
 
 ## Blocks
 
@@ -2252,7 +2252,7 @@
     }
     ```
 
-**[⬆ वापस शीर्ष पर](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#विषयसूची)**
 
 ## Control Statements
 
@@ -2323,7 +2323,7 @@
     }
     ```
 
-**[⬆ वापस शीर्ष पर](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#विषयसूची)**
 
 ## Comments
 
@@ -2464,7 +2464,7 @@
     }
     ```
 
-**[⬆ वापस शीर्ष पर](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#विषयसूची)**
 
 ## Whitespace
 
@@ -2953,7 +2953,7 @@
     ```
     <!-- markdownlint-enable MD012 -->
 
-**[⬆ वापस शीर्ष पर](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#विषयसूची)**
 
 ## Commas
 
@@ -3088,7 +3088,7 @@
     );
     ```
 
-**[⬆ वापस शीर्ष पर](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#विषयसूची)**
 
 ## Semicolons
 
@@ -3138,7 +3138,7 @@
 
     [Read more](https://stackoverflow.com/questions/7365172/semicolon-before-self-invoking-function/7365214#7365214).
 
-**[⬆ वापस शीर्ष पर](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#विषयसूची)**
 
 ## Type Casting & Coercion
 
@@ -3229,7 +3229,7 @@
     const hasAge = !!age;
     ```
 
-**[⬆ वापस शीर्ष पर](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#विषयसूची)**
 
 ## Naming Conventions
 
@@ -3468,7 +3468,7 @@
     };
     ```
 
-**[⬆ वापस शीर्ष पर](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#विषयसूची)**
 
 ## Accessors
 
@@ -3537,7 +3537,7 @@
     }
     ```
 
-**[⬆ वापस शीर्ष पर](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#विषयसूची)**
 
 ## Events
 
@@ -3568,7 +3568,7 @@
     });
     ```
 
-  **[⬆ वापस शीर्ष पर](#table-of-contents)**
+  **[⬆ वापस शीर्ष पर](#विषयसूची)**
 
 ## jQuery
 
@@ -3637,14 +3637,14 @@
     $sidebar.find('ul').hide();
     ```
 
-**[⬆ वापस शीर्ष पर](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#विषयसूची)**
 
 ## ECMAScript 5 Compatibility
 
   <a name="es5-compat--kangax"></a><a name="26.1"></a>
   - [27.1](#es5-compat--kangax) Refer to [Kangax](https://twitter.com/kangax/)’s ES5 [compatibility table](https://kangax.github.io/es5-compat-table/).
 
-**[⬆ वापस शीर्ष पर](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#विषयसूची)**
 
 <a name="ecmascript-6-styles"></a>
 ## ECMAScript 6+ (ES 2015+) Styles
@@ -3672,7 +3672,7 @@
 
     > Why? [They are not finalized](https://tc39.github.io/process-document/), and they are subject to change or to be withdrawn entirely. We want to use JavaScript, and proposals are not JavaScript yet.
 
-**[⬆ वापस शीर्ष पर](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#विषयसूची)**
 
 ## Standard Library
 
@@ -3712,7 +3712,7 @@
     Number.isFinite(parseInt('2e3', 10)); // true
     ```
 
-**[⬆ वापस शीर्ष पर](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#विषयसूची)**
 
 ## Testing
 
@@ -3734,7 +3734,7 @@
     - 100% test coverage is a good goal to strive for, even if it’s not always practical to reach it.
     - Whenever you fix a bug, _write a regression test_. A bug fixed without a regression test is almost certainly going to break again in the future.
 
-**[⬆ वापस शीर्ष पर](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#विषयसूची)**
 
 ## Performance
 
@@ -3748,7 +3748,7 @@
   - [Are JavaScript functions like `map()`, `reduce()`, and `filter()` optimized for traversing arrays?](https://www.quora.com/JavaScript-programming-language-Are-Javascript-functions-like-map-reduce-and-filter-already-optimized-for-traversing-array/answer/Quildreen-Motta)
   - Loading...
 
-**[⬆ वापस शीर्ष पर](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#विषयसूची)**
 
 ## Resources
 
@@ -3829,7 +3829,7 @@
   - [JavaScript Air](https://javascriptair.com/)
   - [JavaScript Jabber](https://devchat.tv/js-jabber/)
 
-**[⬆ वापस शीर्ष पर](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#विषयसूची)**
 
 ## In the Wild
 
@@ -3925,7 +3925,7 @@
   - **Zillow**: [zillow/javascript](https://github.com/zillow/javascript)
   - **ZocDoc**: [ZocDoc/javascript](https://github.com/ZocDoc/javascript)
 
-**[⬆ वापस शीर्ष पर](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#विषयसूची)**
 
 ## Translation
 
@@ -3985,7 +3985,7 @@ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-**[⬆ वापस शीर्ष पर](#table-of-contents)**
+**[⬆ वापस शीर्ष पर](#विषयसूची)**
 
 ## Amendments
 
