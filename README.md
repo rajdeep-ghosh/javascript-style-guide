@@ -286,7 +286,7 @@
     ```
 
   <a name="objects--prototype-builtins"></a>
-  - [3.7](#objects--prototype-builtins) सीधे `Object.prototype` विधियों को कॉल न करें, जैसे कि 'hasOwnProperty`, `propertyIsEnumerable`, और `isPrototypeOf`। eslint: [`no-prototype-builtins`](https://eslint.org/docs/rules/no-prototype-builtins)
+  - [3.7](#objects--prototype-builtins) सीधे `Object.prototype` विधियों को कॉल न करें, जैसे कि `hasOwnProperty`, `propertyIsEnumerable`, और `isPrototypeOf`। eslint: [`no-prototype-builtins`](https://eslint.org/docs/rules/no-prototype-builtins)
 
     > क्यों? इन विधियों को विचाराधीन वस्तु पर गुणों द्वारा छायांकित किया जा सकता है - विचार करें `{ hasOwnProperty: false }` - या, ऑब्जेक्ट एक शून्य ऑब्जेक्ट हो सकता है (`Object.create(null)`).
 
