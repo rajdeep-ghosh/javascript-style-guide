@@ -330,34 +330,34 @@
 ## Arrays
 
   <a name="arrays--literals"></a><a name="4.1"></a>
-  - [4.1](#arrays--literals) Use the literal syntax for array creation. eslint: [`no-array-constructor`](https://eslint.org/docs/rules/no-array-constructor.html)
+  - [4.1](#arrays--literals) सरणी निर्माण के लिए शाब्दिक सिंटैक्स का उपयोग करें। eslint: [`no-array-constructor`](https://eslint.org/docs/rules/no-array-constructor.html)
 
     ```javascript
-    // bad
+    // बुरा
     const items = new Array();
 
-    // good
+    // ठीक
     const items = [];
     ```
 
   <a name="arrays--push"></a><a name="4.2"></a>
-  - [4.2](#arrays--push) Use [Array#push](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/push) instead of direct assignment to add items to an array.
+  - [4.2](#arrays--push) एक "सरणी" में आइटम जोड़ने के लिए प्रत्यक्ष असाइनमेंट के बजाय [Array#push](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/push) का उपयोग करें।
 
     ```javascript
     const someStack = [];
 
-    // bad
+    // बुरा
     someStack[someStack.length] = 'abracadabra';
 
-    // good
+    // ठीक
     someStack.push('abracadabra');
     ```
 
   <a name="es6-array-spreads"></a><a name="4.3"></a>
-  - [4.3](#es6-array-spreads) Use array spreads `...` to copy arrays.
+  - [4.3](#es6-array-spreads) सरणी को कॉपी करने के लिए `...` का उपयोग करें
 
     ```javascript
-    // bad
+    // बुरा
     const len = items.length;
     const itemsCopy = [];
     let i;
@@ -366,7 +366,7 @@
       itemsCopy[i] = items[i];
     }
 
-    // good
+    // ठीक
     const itemsCopy = [...items];
     ```
 
