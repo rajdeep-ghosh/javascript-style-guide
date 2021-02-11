@@ -341,7 +341,7 @@
     ```
 
   <a name="arrays--push"></a><a name="4.2"></a>
-  - [4.2](#arrays--push) एक "सरणी" में आइटम जोड़ने के लिए प्रत्यक्ष असाइनमेंट के बजाय [Array#push](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/push) का उपयोग करें।
+  - [4.2](#arrays--push) एक "सरणी" में आइटम जोड़ने के लिए प्रत्यक्ष असाइनमेंट के बजाय [`Array#push`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/push) का उपयोग करें।
 
     ```javascript
     const someStack = [];
